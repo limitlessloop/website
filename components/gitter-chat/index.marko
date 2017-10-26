@@ -1,0 +1,36 @@
+style {
+    .gitter-button {
+        position:fixed;
+        bottom:2em;
+        right:2em;
+        height:64px;
+        width:64px;
+        background:#d04;
+        border-radius:50%;
+        padding:14px 12px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5), 0px 3px 3px rgba(0, 0, 0, 0.25);
+        cursor:pointer;
+    }
+    .gitter-button:hover:not(:active) {
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5), 0px 5px 3px rgba(0, 0, 0, 0.25);
+        margin-bottom:2px;
+    }
+    .gitter-button:active {
+        background:#cc003c;
+    }
+    .gitter-button img {
+        max-width:100%;
+    }
+}
+
+<div.gitter-button>
+    <img src="./chat.svg"/>
+</div>
+
+<script>
+((window.gitter = {}).chat = {}).options = {
+    room: 'marko-js/marko',
+    activationElement: '.gitter-button'
+};
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer/>

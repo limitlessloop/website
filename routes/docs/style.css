@@ -49,6 +49,7 @@
 .doc-content .doc-footer {
     border:1px solid #dbdddf;
     border-radius: 0.2rem;
+    margin-bottom: 0;
 }
 
 @media (max-width:45em) {
